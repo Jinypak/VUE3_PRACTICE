@@ -1,19 +1,14 @@
 <template>
-  <div class="p-14">
-    <router-link class="flex justify-center text-4xl text-yellow-700" to="/">Home</router-link>
+  <div id="app">
+    <router-view></router-view>
   </div>
-  <router-view></router-view>
 </template>
 
-<script>
-
-export default {
-  name: 'App',
-  components: {}
-}
+<script setup>
 </script>
 
-<style>
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,5 +16,21 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+body {
+  background: #f2f2f2;
+  color: #444;
+  margin: 0;
+}
+body * {
+  font-family: "Poppins";
+}
+
+/* header */
+header {
+  text-align: center;
+  background: #e7e7e7;
+  padding-top: 20px;
 }
 </style>
