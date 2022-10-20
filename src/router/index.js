@@ -11,7 +11,7 @@ export default createRouter({
             component: Home
         },
         {
-            path: '/about/:slug',
+            path: '/about',
             name: 'About',
             component: About
         },
